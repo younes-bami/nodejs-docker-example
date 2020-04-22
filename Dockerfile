@@ -13,4 +13,4 @@ RUN npm install
 # RUN yarn install
 
 COPY . /app/
-ENTRYPOINT ["mocha","test.js"]
+#ENTRYPOINT ["mocha","test.js"]
