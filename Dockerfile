@@ -13,3 +13,4 @@ RUN npm install
 # RUN yarn install
 
 COPY . /app/
+ENTRYPOINT ["node","test.js"]
