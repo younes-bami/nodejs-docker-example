@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nodejs-ex
+  name: nodejs-ex
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodejs-ex
+  template:
+    metadata:
+      labels:
+        app: nodejs-ex
+    spec:
+      containers:
+        - image: younesic/nodejs-ex:latest
+          imagePullPolicy: Always
+          name: nodejs-ex
